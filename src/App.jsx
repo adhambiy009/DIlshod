@@ -1,117 +1,3 @@
-// import { useState } from 'react'
-// import azam from './assets/images3.png'
-// import azam2 from './assets/1695456183_1.jpg'
-// import Git from './assets/hubl.png'
-// import jS from './assets/js.png'
-// import i from './assets/i.webp'
-// import JSD from './assets/jm.jpg'
-// import html from './assets/html.png'
-// import react from './assets/react.png'
-// import githup from './assets/gho.jpg'
-// import socail from './assets/socail.webp'
-// import reactro from './assets/ReactRouter.webp'
-// import './App.css'
-
-// function App() {
-
-//   return (
-//     <>
-//       <div className="w-full">
-//         <div class="h-20 flex w-full">
-//           <div class="w-1000 bg-gray-400 flex items-center">
-//             <div className='flex items-center'>
-//               <img className='w-18 h-15 ml-25 rounded-3xl border-2 border-black ' src={azam} alt="" />
-//             </div>
-//           </div>
-//           <div class="w-1000 bg-gray-400 flex items-center justify-end">
-//             <div className='text-zinc-950 font-bold flex justify-end gap-10 mr-20'>
-//               <p>HOME</p>
-//               <p>SKILLS</p>
-//               <p>PROJECTS</p>
-//               <button className='bg-black text-white w-25 rounded-[10px]'>CONTACT</button>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="flex w-full">
-//           <div className="w-1000 bg-white flex items-center mt-50">
-//             <div className="text-black pl-7">
-//               <p className="text-3xl font-bold pl-20">Hi, I AM</p>
-//               <h1 className="text-4xl font-bold pl-20">JASGASBAYEV ADHAMBIY</h1>
-//               <h3 className="text-xl font-bold text-green-400 pl-20">
-//                 FRONT-END DEVELOPER / UI DESIGNER
-//               </h3>
-//               <div className='flex'>
-//                 <img className='w-15 h-15 ml-20 mt-5' src={Git} alt="" />
-//                 <img className='w-15 h-15  ml-5 rounded-[50%] mt-5  ' src={jS} alt="" />
-//                 <img className='w-15 h-15 ml-5 rounded-[50%] mt-5' src={i} alt="" />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="w-1000 bg-white flex items-center justify-center">
-//             <img className="w-150 h-170 rounded-[30px] mt-30" src={azam2} alt="" />
-//           </div>
-//         </div>
-//         <div className=' w-full'>
-//           <div className='bg-gray-400 h-200 '>
-//             <p className='flex justify-center text-white text-3xl font-bold pt-15'>SKILLS</p>
-
-//             <div className=' flex justify-between mt-20'>
-//               <div className='border-4 w-90 h-90 bg-white border-black rounded-[20px] ml-27'>
-//                 <img className='w-60 h-60 ml-15 mt-10 rounded-[50%]' src={JSD} alt="" />
-//                 <h1 className='text-4xl text-black font-black pl-20'>JAVASCRIPT</h1>
-//               </div>
-//               <div className='border-4 w-90 h-90 border-black bg-white rounded-[20px]'>
-//                 <img className='w-50 h-50 ml-20 mt-10 rounded-[50%]' src={html} alt="" />
-//                 <h1 className='text-4xl font-black pl-30 pt-10'>HTML</h1>
-//               </div>
-//               <div className='border-4 w-90 h-90 bg-white border-black rounded-[20px]'>
-//                 <img className='w-40 h-40 ml-25 mt-20 rounded-[50%]' src={react} alt="" />
-//                 <h1 className='text-4xl text-black font-black pl-30 pt-10'>REACT</h1>
-//               </div>
-//               <div className='border-4 w-90 h-90 bg-white border-black rounded-[20px] mr-23'>
-//                 <img className='w-40 h-40 ml-25 mt-20 rounded-[50%]' src={githup} alt="" />
-//                 <h1 className='text-4xl text-black font-black pl-27 pt-10'>GITHUB</h1>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className='w-auto h-190'>
-//           <p className='flex justify-center text-4xl font-black pt-15'>PROJECTS</p>
-//           <div className='flex justify-between'>
-//             <div>
-//               <div className='rounded-2xl bg-blue-950 w-230 h-80 ml-25 mt-45'>
-//                 <p className='pl-115 text-white font-serif text-2xl pt-20'>React Router - Frontend Architecture</p>
-//                 <p className='text-white pl-115 pt-5'>I have nothing to say about it. I worked on this <br /> to improve my experience.</p>
-//                 <img className='w-100 ml-10 h-40 rounded-2xl border-2 border-l-blue-600 mt-[-110px]' src={reactro} alt="" />
-//               </div>
-//             </div>
-//             <div>
-//               <div className='rounded-2xl bg-blue-950 w-230 h-80 mr-25 mt-45'>
-//                 <p className='pl-115 text-white font-serif text-2xl pt-20'>SocialApp - Frontend Development</p>
-//                 <p className='text-white pl-115 pt-5'>This site was built using JavaScript/React, <br /> Tailwind CSS. It's similar to Instagram. It <br /> doesn't have as many features yet.</p>
-//                 <img className='w-100 ml-10 h-40 rounded-2xl border-2 border-l-blue-600 mt-[-135px]' src={socail} alt="" />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className='w-full'>
-//           <div className='bg-gray-400 h-200'>
-//             <p className='flex justify-center text-3xl font-black pt-15'>CONTACT</p>
-//             <div className='mt-50 ml-25'>
-//               <span className='text-red-600 text-5xl font-bold'>Get In Touch</span>
-//               <h6 className='font-black pt-5'>If you're considering my contribution, have a <br /> question, or   just want to say hi, I'd love to <br /> hear from you! Feel free to reach out through any <br /> of these channels.  </h6>
-//               <button className='bg-blue-600 w-97 h-10 text-2xl font-bold text-white rounded-[7px] mt-7'>📞  SAY HELLO</button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//     </>
-//   )
-// }
-
-// export default App
-
 import azam from './assets/images3.png'
 import azam2 from './assets/1695456183_1.jpg'
 import Git from './assets/hubl.png'
@@ -124,21 +10,53 @@ import githup from './assets/gho.jpg'
 import socail from './assets/socail.webp'
 import reactro from './assets/ReactRouter.webp'
 import './App.css'
+import { useState } from "react";
 
+import { bg, bgc, bgh } from '../colors'
 function App() {
+  const [full, useFull] = useState(false)
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="w-full">
+    <div className="w-full ">
+      <div className="fixed top-0 left-0 w-full bg-black text-white z-50">
+        <div className="flex items-center justify-between px-6 py-4">
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-gray-400 px-6 py-4 fixed top-0 left-0 w-full bg-gray-400 z-50">
-        <img className=" w-14 h-14 rounded-3xl border-2 border-black" src={azam} alt="" />
+          <h1 className="text-xl font-bold">LOGO</h1>
 
-        <div className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 text-black font-bold items-center">
-          <a href="#home">HOME</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#PROJECTS">PROJECTS</a>
-          <a href='#contact' className="bg-black text-white px-4 py-2 rounded-lg">CONTACT</a>
+          <div className="hidden md:flex gap-10 items-center">
+            <a href="#home">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact" className="bg-white text-black px-4 py-2 rounded-lg">
+              CONTACT
+            </a>
+          </div>
+
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setOpen(!open)}
+          >
+            ☰
+          </button>
         </div>
+
+        {open && (
+          <div className="md:hidden flex flex-col items-center gap-6 pb-6">
+            <a href="#home" onClick={() => setOpen(false)}>HOME</a>
+            <a href="#skills" onClick={() => setOpen(false)}>SKILLS</a>
+            <a href="#projects" onClick={() => setOpen(false)}>PROJECTS</a>
+            <a
+              href="#contact"
+              className="bg-white text-black px-4 py-2 rounded-lg"
+              onClick={() => setOpen(false)}
+            >
+              CONTACT
+            </a>
+          </div>
+        )}
       </div>
+
 
       <div className="flex flex-col md:flex-row items-center justify-between px-6 py-10 max-w-6xl mx-auto" id='home'>
         <div className="text-center md:text-left">
@@ -158,7 +76,7 @@ function App() {
         <img className="w-64 md:w-100 rounded-2xl mt-150 md:mt-20" src={azam2} alt="" />
       </div>
 
-      <div className="bg-gray-400 py-12 mt-[-40px]" id='skills'>
+      <div className="py-12 mt-[-40px]" id='skills' style={{ backgroundColor: bgc }}>
         <p className="text-center text-3xl font-bold text-white">SKILLS</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10 px-6 max-w-6xl mx-auto">
@@ -210,7 +128,7 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-gray-400 py-12" id='contact'>
+      <div className="bg-gray-400 py-12" style={{ backgroundColor: bgh }} id='contact'>
         <div className="max-w-6xl mx-auto px-6">
 
           <p className="text-3xl font-bold text-center">CONTACT</p>
@@ -225,7 +143,7 @@ function App() {
                 feel free to reach out!
               </p>
 
-              <button className="bg-blue-600 mt-6 px-6 py-3 text-xl font-bold text-white rounded-lg">
+              <button className="bg-black mt-6 px-6 py-3 text-xl font-bold text-white rounded-lg">
                 📞 SAY HELLO
               </button>
             </div>
@@ -242,7 +160,7 @@ function App() {
         </div>
       </div>
 
-    </div>
+    </div >
   )
 }
 
